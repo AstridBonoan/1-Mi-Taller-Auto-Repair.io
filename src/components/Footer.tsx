@@ -17,7 +17,8 @@ export function Footer() {
               />
             </a>
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-gray-400">
-              {SITE.name} — honest, personalized auto repair serving Queens since {SITE.established}.
+              Family-owned and operated auto repair serving Queens since {SITE.established}.
+              Engine, transmission, suspension, tires, and full-service care.
             </p>
             <div className="mt-4 flex gap-3">
               <a
@@ -70,6 +71,8 @@ export function Footer() {
                 <Phone className="h-4 w-4" aria-hidden />
                 {SITE.phone}
               </a>
+              <p className="text-gray-500">Fax: {SITE.fax}</p>
+              <p className="text-gray-500">{SITE.contactName}</p>
             </address>
           </div>
         </div>

@@ -14,11 +14,12 @@ export function WhyChooseUs() {
           >
             <p className="text-sm font-semibold uppercase tracking-wider text-muted-orange">Why Choose Us</p>
             <h2 className="mt-2 font-display text-3xl font-bold text-charcoal sm:text-4xl">
-              The Same Honest Shop Queens Has Trusted for Years
+              Personalized Auto Care You Can Trust
             </h2>
-            <p className="mt-4 text-gray-600 leading-relaxed">
-              At {SITE.name}, your car&apos;s needs go beyond make and model. We give every
-              vehicle individualized attention — the way a real neighborhood mechanic should.
+            <p className="mt-4 leading-relaxed text-gray-600">
+              At {SITE.name}, we know your car&apos;s needs go beyond the make and model.
+              That&apos;s why we give your vehicle individualized attention during every visit —
+              the specialized care it deserves from a full-service neighborhood mechanic.
             </p>
             <ul className="mt-8 space-y-4">
               {WHY_US.map((item) => (
@@ -44,8 +45,10 @@ export function WhyChooseUs() {
               />
             </div>
             <div className="absolute -bottom-4 -left-4 rounded-xl bg-charcoal px-5 py-4 text-white shadow-lg sm:-bottom-6 sm:-left-6">
-              <p className="text-3xl font-bold text-deep-red">25+</p>
-              <p className="text-sm text-gray-300">Years serving Queens since {SITE.established}</p>
+              <p className="text-3xl font-bold text-deep-red">{SITE.yearsExperience}</p>
+              <p className="text-sm text-gray-300">
+                Years of exceptional auto repair · Est. {SITE.established}
+              </p>
             </div>
           </div>
         </div>

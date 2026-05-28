@@ -13,13 +13,13 @@ import type { SERVICES } from '../data/site'
 type IconName = (typeof SERVICES)[number]['icon']
 
 const icons: Record<IconName, typeof Wrench> = {
+  general: Wrench,
   engine: Cog,
-  diagnostics: Gauge,
   brakes: CircleDot,
   oil: Droplets,
   tires: Car,
   suspension: Settings2,
-  transmission: Wrench,
+  transmission: Gauge,
   towing: Truck,
 }
 

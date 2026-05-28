@@ -25,7 +25,7 @@ export function Hero() {
             <span className="text-gray-300">· Auto Repair · Queens, NY</span>
           </span>
           <span className="rounded-full bg-deep-red/20 px-3 py-1 text-sm font-medium text-red-200">
-            Open — Call for Same-Day Service
+            Family-Owned · Military Discounts Available
           </span>
         </div>
 
@@ -37,9 +37,9 @@ export function Hero() {
           className="fade-in-up mt-5 max-w-2xl text-lg leading-relaxed text-gray-300 sm:text-xl"
           style={{ animationDelay: '0.1s' }}
         >
-          Trusted local mechanics providing honest service, engine repairs, tires,
-          diagnostics, and complete vehicle care — serving Woodside, Jackson Heights, and
-          all of Queens.
+          Trusted local mechanics with {SITE.yearsExperience} years of experience — engine repairs,
+          transmissions, suspension, tires, and complete vehicle care. Serving Woodside, Corona,
+          Astoria, Jackson Heights, and all of Queens.
         </p>
 
         <div
@@ -69,7 +69,9 @@ export function Hero() {
             <MapPin className="h-4 w-4 text-steel-light" aria-hidden />
             {SITE.fullAddress}
           </span>
-          <span>Est. {SITE.established} · Family-owned · Military discounts available</span>
+          <span>
+            Est. {SITE.established} · Contact {SITE.contactName} · Call for estimates
+          </span>
         </div>
       </div>
     </section>

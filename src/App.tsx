@@ -6,6 +6,7 @@ import { MobileCallBar } from './components/MobileCallBar'
 import { Navbar } from './components/Navbar'
 import { Reviews } from './components/Reviews'
 import { Services } from './components/Services'
+import { SpecialOffers } from './components/SpecialOffers'
 import { TrustBar } from './components/TrustBar'
 import { WhyChooseUs } from './components/WhyChooseUs'
 
@@ -16,6 +17,7 @@ function App() {
       <main className="pb-20 sm:pb-0">
         <Hero />
         <TrustBar />
+        <SpecialOffers />
         <Services />
         <WhyChooseUs />
         <Reviews />
