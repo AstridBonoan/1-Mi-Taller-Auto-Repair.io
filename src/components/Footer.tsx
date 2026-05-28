@@ -81,6 +81,20 @@ export function Footer() {
           <p>© {year} {SITE.name}. All rights reserved.</p>
           <p>Serving {SITE.serviceAreas.join(' · ')}</p>
         </div>
+
+        <div className="mt-6 flex flex-col items-center justify-center gap-2 border-t border-white/5 pt-6 sm:flex-row sm:gap-3">
+          <img
+            src={`${import.meta.env.BASE_URL}bonoan-labs-watermark.png`}
+            alt="Bonoan Labs"
+            className="h-6 w-auto opacity-70"
+            draggable={false}
+          />
+          <p className="text-[11px] text-gray-600">
+            Website design &amp; development by{' '}
+            <span className="font-medium text-gray-400">Bonoan Labs</span>. Unauthorized
+            copying prohibited.
+          </p>
+        </div>
       </div>
     </footer>
   )

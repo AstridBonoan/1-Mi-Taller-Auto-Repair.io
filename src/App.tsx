@@ -1,4 +1,5 @@
 import { Contact } from './components/Contact'
+import { SiteWatermark } from './components/SiteWatermark'
 import { Footer } from './components/Footer'
 import { Gallery } from './components/Gallery'
 import { Hero } from './components/Hero'
@@ -13,6 +14,7 @@ import { WhyChooseUs } from './components/WhyChooseUs'
 function App() {
   return (
     <>
+      <SiteWatermark />
       <Navbar />
       <main className="pb-20 sm:pb-0">
         <Hero />
