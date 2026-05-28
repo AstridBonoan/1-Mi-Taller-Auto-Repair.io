@@ -198,15 +198,15 @@ export const GALLERY_IMAGES = [
     alt: 'Technician inspecting engine bay',
   },
   {
-    src: 'https://images.unsplash.com/photo-1597852074816-d933fbb2f5c3?w=800&q=80',
+    src: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80',
     alt: 'Tire service and wheel work',
   },
   {
-    src: 'https://images.unsplash.com/photo-1487754180451-c593f7f14c70?w=800&q=80',
+    src: 'https://images.unsplash.com/photo-1563720223185-11003d516935?w=800&q=80',
     alt: 'Vehicle on lift in repair bay',
   },
   {
-    src: 'https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=800&q=80',
+    src: 'https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=800&q=80',
     alt: 'Everyday car maintenance service',
   },
 ] as const
