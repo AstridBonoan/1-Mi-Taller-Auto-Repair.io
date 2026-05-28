@@ -46,7 +46,9 @@ export function Reviews() {
   const scroll = (dir: 'left' | 'right') => {
     const el = scrollRef.current
     if (!el) return
-    const amount = el.clientWidth * 0.85
+    const card = el.querySelector<HTMLElement>('[data-review-card]')
+    const gap = 16
+    const amount = card ? card.offsetWidth + gap : 300
     el.scrollBy({ left: dir === 'left' ? -amount : amount, behavior: 'smooth' })
   }
 
@@ -77,7 +79,7 @@ export function Reviews() {
               Read all on Google
               <ExternalLink className="h-4 w-4" aria-hidden />
             </a>
-            <div className="hidden gap-2 sm:flex">
+            <div className="flex gap-2">
               <button
                 type="button"
                 onClick={() => scroll('left')}
@@ -100,18 +102,19 @@ export function Reviews() {
 
         <div
           ref={scrollRef}
-          className={`review-scroll mt-10 flex gap-5 overflow-x-auto snap-x snap-mandatory pb-2 transition-all duration-700 delay-100 ${visible ? 'opacity-100' : 'opacity-0'}`}
+          className={`review-scroll -mx-4 mt-10 flex flex-nowrap gap-4 overflow-x-auto snap-x snap-mandatory scroll-pl-4 px-4 pb-4 sm:-mx-6 sm:scroll-pl-6 sm:px-6 transition-all duration-700 delay-100 ${visible ? 'opacity-100' : 'opacity-0'}`}
         >
           {REVIEWS.map((review) => (
             <article
               key={review.id}
-              className="flex min-w-[min(100%,320px)] flex-shrink-0 snap-start flex-col rounded-xl border border-white/10 bg-matte p-6 sm:min-w-[360px]"
+              data-review-card
+              className="flex w-[280px] max-w-[calc(100vw-3rem)] shrink-0 snap-center flex-col rounded-xl border border-white/10 bg-matte p-5 sm:w-[300px] sm:max-w-[300px] sm:p-6"
             >
               <div className="flex items-start justify-between gap-3">
                 <Stars count={review.rating} />
                 <GoogleMark />
               </div>
-              <p className="mt-4 flex-1 text-sm leading-relaxed text-gray-300">
+              <p className="mt-4 flex-1 text-sm leading-relaxed text-gray-300 [overflow-wrap:anywhere]">
                 &ldquo;{review.text}&rdquo;
               </p>
               <footer className="mt-5 border-t border-white/10 pt-4">
