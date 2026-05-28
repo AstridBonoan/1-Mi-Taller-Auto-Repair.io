@@ -21,6 +21,9 @@ export const SITE = {
   established: '2000',
   yearsExperience: '10+',
   rating: '5.0',
+  reviewCount: '190+',
+  googleReviewsUrl:
+    'https://www.google.com/maps/search/?api=1&query=1+Mi+Taller+Auto+Repair+51-06+70th+St+Woodside+NY+11377',
   serviceAreas: [
     'Queens',
     'Woodside',
@@ -135,36 +138,49 @@ export const WHY_US = [
   'Call or stop by for an honest estimate — talk to Franklin and our team',
 ] as const
 
+/** Verbatim Google reviews — names and text from public Google listings */
 export const REVIEWS = [
   {
-    name: 'Maria G.',
-    location: 'Woodside, Queens',
+    id: 'ivonne-gonzalez',
+    author: 'Ivonne Gonzalez',
+    date: 'December 2024',
     rating: 5,
-    text: 'Fair prices and honest work. They told me exactly what my car needed — nothing extra. I have been coming here for years.',
+    text: 'If you need an honest and proficient mechanic shop - THIS IS YOUR PLACE!. Save the information!! You will thank me for it. Franklin and his team are trustworthy and very experienced. They will check your vehicle and if nothing is wrong with it they will let you know. This shop has been here for years. I fully recommend it to everyone!',
   },
   {
-    name: 'James R.',
-    location: 'Jackson Heights',
+    id: 'chuck-rhoades',
+    author: 'Chuck Rhoades',
+    date: 'September 2024',
     rating: 5,
-    text: 'Professional, friendly staff. My engine repair was done right the first time — timing belt and water pump, no issues since.',
+    text: "Mi taller is a great, local shop. They do honest work, stay true to their word, and are affordable. What more can one ask from a mechanic? Frank is the man. He's always available, even when he's busy, and he tells you what you need to hear. The shop is quite large, indoor and outdoor seating if needed, and they'll do anything from brake pads to engines. I absolutely recommend them for all your needs.",
   },
   {
-    name: 'Carlos M.',
-    location: 'Corona, Queens',
+    id: 'sadira-andujar',
+    author: 'sadira andujar',
+    date: 'December 2024',
     rating: 5,
-    text: 'Franklin and the team are trustworthy and work fast. Best neighborhood shop I have found in Queens.',
+    text: 'From Shantal setting up my appointment to Franklin assisting me with my car once I got there, everything was perfect. Went in to change my 2 front struts. The car is running smooth. Also, thank you to Veronica for letting me know all the other services they provide, since it was my first time there. Definitely will be going back.',
   },
   {
-    name: 'Linda K.',
-    location: 'Astoria',
+    id: 'google-nov-2025',
+    author: null,
+    date: 'November 2025',
     rating: 5,
-    text: 'Got new tires at a great price. Friendly staff, efficient service, and they reset my TPMS light. Highly recommend.',
+    text: 'HIGHLY RECOMMENDED! Franklyn and his team are very professional, honest, punctual, and deliver excellent results.',
   },
   {
-    name: 'David P.',
-    location: 'East Elmhurst',
+    id: 'google-sep-2025',
+    author: null,
+    date: 'September 2025',
     rating: 5,
-    text: 'They rebuilt my transmission and explained everything clearly. Honest pricing and quality work — my go-to auto repair shop.',
+    text: 'It was my first time visiting, and I had such a great experience! Franklin was super friendly and really helpful. His knowledge about cars and mechanics was spot on and truly impressive!',
+  },
+  {
+    id: 'google-aug-2025',
+    author: null,
+    date: 'August 2025',
+    rating: 5,
+    text: "5/5 mechanic. Where do I begin. The staff is extremely friendly, helpful, and accommodating. I was a walk in customer and typically that means you don't get service quickly but I was taken right away even though the shop was busy. I will most definitely be making this my go to shop when it comes to the maintenance…",
   },
 ] as const
 
